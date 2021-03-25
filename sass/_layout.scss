@@ -1,0 +1,31 @@
+.container {
+  max-width: 120rem; //1200px
+  margin: 8rem auto; // Centers Container in body
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color-grey-light-2);
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+
+  flex: 0 0 18%; // Flex: Grow Shrink Width;
+}
+.hotel-view {
+  background-color: #fff;
+  background-color: orangered;
+
+  flex: 1; // Element will grow as much as possible
+}
