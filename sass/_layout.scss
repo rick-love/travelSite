@@ -13,7 +13,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: var(--line);
 }
 .content {
   display: flex;
@@ -21,11 +21,35 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
 
-  flex: 0 0 18%; // Flex: Grow Shrink Width;
+  // Keeps Width @ 18% -> Flex: Grow Shrink Width
+  flex: 0 0 18%;
+
+  // PUSHES LEGAL TEXT TO BOTTOM
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hotel-view {
   background-color: #fff;
-  background-color: orangered;
 
-  flex: 1; // Element will grow as much as possible
+  // Element will grow as much as possible
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+}
+.description {
+  background-color: #fff;
+  flex: 0 0 60%;
+  padding: 3rem;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  font-size: 1.5rem;
+}
+.user-review {
+  background-color: orchid;
+  flex: 1;
 }
